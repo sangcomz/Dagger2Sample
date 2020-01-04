@@ -8,7 +8,7 @@ import xyz.sangcomz.dagger2sample.next.NextActivity
 @Subcomponent
 interface SubComponent {
 
-    @Subcomponent.Builder
+    @Subcomponent.Factory
     interface Factory {
         fun create(): SubComponent
     }
