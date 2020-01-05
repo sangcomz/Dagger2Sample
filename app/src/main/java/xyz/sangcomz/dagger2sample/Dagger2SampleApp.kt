@@ -5,8 +5,7 @@ import xyz.sangcomz.dagger2sample.di.DaggerAppComponent
 
 
 class Dagger2SampleApp : Application() {
-
-    val appComponent = DaggerAppComponent.create()
+    val appComponent = DaggerAppComponent.factory().create(this)
 
 
     override fun onCreate() {
